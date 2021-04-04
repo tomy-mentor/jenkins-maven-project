@@ -11,8 +11,7 @@ pipeline {
                     archiveArtifacts artifacts: '**/*.jar'
                 }
             }
-        }
-        
+        }        
         stage('Test') {
             steps {
                 sh 'mvn -f hello-app/pom.xml test'
