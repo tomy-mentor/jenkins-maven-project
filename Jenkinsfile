@@ -16,6 +16,7 @@ pipeline {
         }        
         stage('Test') {
             steps {
+                echo "Test stage is rınning."
                 sh 'mvn -f hello-app/pom.xml test'
             }
             post {
