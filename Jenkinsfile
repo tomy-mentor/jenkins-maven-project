@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                     echo "this is tomy build step"
+                     echo "this is tomys build step"
                      sh 'mvn -f hello-app/pom.xml -B -DskipTests clean package'
             }
             
