@@ -23,6 +23,7 @@ pipeline {
                 always {
 
                     junit 'hello-app/target/surefire-reports/*.xml'
+                    
                 }
             }
         }
